@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: rgb(219, 223, 223);
     width: 90%;
     border: 1px solid black;
     margin: auto;
@@ -8,8 +8,37 @@ body{
 #cabecalho{
     width: 100%;
     border: 1px solid palevioletred;
+    position:relative;
+    display: flex;
+    flex-direction: row; /*row, column, row-reverse, column-reverse*/
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.logo{
+.logo img{
+   width: 50%; 
+}
+
+.menu{
+    width: 60%;
+    background-color: rgb(15, 182, 204);
+    position: relative;
+    display: flex;
     
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li{
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: green;
 }
