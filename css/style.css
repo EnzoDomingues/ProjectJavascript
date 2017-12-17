@@ -1,0 +1,15 @@
+body{
+    background-color: aqua;
+    width: 90%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#cabecalho{
+    width: 100%;
+    border: 1px solid palevioletred;
+}
+
+.logo{
+    
+}
