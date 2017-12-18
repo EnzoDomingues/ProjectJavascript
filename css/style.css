@@ -1,129 +1,168 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(219, 223, 223);
-    width: 90%;
-    border: 1px solid black;
-    margin: auto;
+body {
+  background-color: rgb(219, 223, 223);
+  width: 90%;
+  border: 1px solid black;
+  margin: 0 auto;
+  height: 600px;
 }
 
-#cabecalho{
-    width: 100%;
-    border: 1px solid palevioletred;
-    position:relative;
-    display: flex;
-    flex-direction: row; /*row, column, row-reverse, column-reverse*/
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-
+#cabecalho {
+  width: 100%;
+  border: 1px solid palevioletred;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /*row, column, row-reverse, column-reverse*/
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo img{
-   width: 45%; 
+.logo {
+  width: 75%;
+  position: relative;
 }
 
-.menu{
-    width: 45%;
-    position: relative;
-    display: flex;
-    font-size: 1.6vw;
-    
-}
-.menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.logo img {
+  width: 45%;
 }
 
-.menu ul li{
-    position: relative;
-    display: inline-block;
-    padding: 1em;
-    text-decoration: none;
-    cursor: pointer;
-    color: rgb(0, 5, 0);
+.menu {
+  width: 45%;
+  position: relative;
+  font-size: 1.6vw;
 }
-.menu ul li:hover{
-color: blue;
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  position: relative;
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(0, 5, 0);
+}
+
+.menu ul li:hover {
+  color: blue;
 }
 
 /*Menu Responsivo tags adicionadas no javascreipt*/
-.menu-mobile{
+
+.menu-mobile {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: aqua;
+  border-radius: 5px;
+  line-height: 50px;
+  background-image: url("../image/menu.png");
+  width: 100%;
+  height: 50px;
+  z-index: 30px;
+}
+
+.menu-active {
+  display: block;
+  margin-top: 50px;
+}
+
+.menu-mobile-open {
+  background: #10396f;
+}
+
+.menu-mobile {
+  display: block;
+  width: 100%;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  width: 30%;
+  flex-direction: column;
+  /* float: none; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu-list {
+  display: none;
+  width: 100%;
+  /* display: table-column; */
+  background-color: aqua;
+  font-size: 2vw;
+}
+.menu ul li {
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgb(34, 208, 231);
+}
+
+.menu-active {
+  display: block;
+  margin-top: 50px;    
+}
+
+@media screen and (min-width: 700px) {
+  .logo img {
+    width: 47%;
+  }
+
+  .menu-mobile{
     display: none;
-    cursor: pointer;
-    position: absolute;
+  }
+
+  .menu {
+    position: relative;
+    z-index: 0;
     top: 0;
-    left: 0;
-    background-color: aqua;
-    line-height: 20px;
     width: 100%;
-    height: 50px;
-}
-    .menu-mobile span{
-        width: 100%;
-        height: 4px;
-        margin-bottom: 5px;
-        background: #10396f;
-    }
+  }
 
-    .menu-active{
-        display: block !important;
-        margin-top: 50px;
-    }
-    .menu-mobile-open
-    {
-        width: 100%;
-        height: 4px;
-        margin-bottom: 5px;
-        background: #10396f;
-    }
+  .menu ul li {
+    border: none;
+  }
 
-@media (max-width 480px){
-    .menu-mobile{
-        width: 30%;
-    }
+  .menu-list{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+  }
 }
 
-@media all and (max-width: 700px){
-    .logo img{
-        width: 67%; 
-     }
-.menu{
-    position: relative;  
+
+/* @media screen and (min-width: 1024px) {
+  .menu-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu {
     padding: 0;
     margin: 0;
-    border: 2px solid pink;
-    display: none;
-    width: 100%;
+    width: 30%;
     flex-direction: column;
-    float: none;
-    
-} 
-
-.menu ul{
-    width: 100%;
-    display: table-column;
-    
-    background-color: aqua;
-    font-size: 2vw;
-
-}
-.menu ul li{
-    width: 100%;
-    text-align: center;
-    border: 1px solid rgb(34, 208, 231);
-    
-}
-
-.menu-mobile{
-    display: block;
-}
-
-}
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+  }  
+} */
