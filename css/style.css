@@ -62,36 +62,36 @@ body {
 .menu-mobile {
   display: none;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
-  background: aqua;
+  right: 0;
+  margin: 10px 40px;
   border-radius: 5px;
   line-height: 50px;
   background-image: url("../image/menu.png");
   width: 100%;
-  height: 50px;
+  height: 49px;
   z-index: 30px;
 }
 
 .menu-active {
   display: block;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .menu-mobile-open {
-  background: #10396f;
+  background-image: url("../image/menu.png");
 }
 
 .menu-mobile {
   display: block;
-  width: 100%;
+  width: 9%;
 }
 
 .menu {
   padding: 0;
-  margin: 0;
-  width: 30%;
+  margin: 0px 55px;
+  width: 28%;
   flex-direction: column;
   /* float: none; */
   position: absolute;
@@ -105,13 +105,13 @@ body {
   display: none;
   width: 100%;
   /* display: table-column; */
-  background-color: aqua;
+  background-color: rgb(185, 185, 185);
   font-size: 2vw;
 }
 .menu ul li {
   width: 100%;
   text-align: center;
-  border: 1px solid rgb(34, 208, 231);
+  border: 1px solid rgb(169, 169, 169);
 }
 
 .menu-active {
