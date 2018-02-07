@@ -101,24 +101,28 @@ body {
     position: relative;
     left: 0px;
     top:-90px;
+    visibility: visible;
   }
   #b2{
     position: relative;
     left: 0px;
     top:-490px;
+    visibility: hidden;
   }
   #b3{
     position: relative;
     left: 0px;
     top:-890px;
+    visibility: hidden;
   }
   #b4{
     position: relative;
     left: 0px;
     top:-1290px;
+    visibility: hidden;
   }
 /*bolinhas*/
-  #bols-navigation{
+  .bols-navigation{
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -130,16 +134,16 @@ body {
   }
 
   .bolls{
-    width: 21px;
+    width: 20px;
     background-color: grey;
     border-radius: 20px;
     height: 21px;
-    margin: 1px;
+    margin: 0px 94px 0px 21px;
     cursor: pointer;
   }
   .active, bolls:hover{
-    width: 23px;
-    height: 23px;
+    width: 22px;
+    height: 22px;
     background-color: rgb(199, 199, 199);
     transition-duration: 50ms;
   }
